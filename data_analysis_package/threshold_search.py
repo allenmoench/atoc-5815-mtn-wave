@@ -61,11 +61,11 @@ def threshold_search(column_name, threshold, url, start_date, end_date):
     print(HS_df)
 
 if __name__ == '__main__':
-print("Running tests...")
-threshold = 60
-column_name = "Hi_Speed"
-url = "https://sundowner.colorado.edu/weather/atoc1/wxobs20211230.txt"
-start_date = datetime.date(2021,12,1)
-end_date = datetime.date(2021,12,31)
-HS_df = threshold_search(column_name, threshold, url, start_date, end_date)
-print(f"Days exceeding 60mph winds: {HS_df}")
+    print("Running tests...")
+    threshold = 60
+    column_name = "Hi_Speed"
+    url = "https://sundowner.colorado.edu/weather/atoc1/wxobs20211230.txt"
+    start_date = datetime.date(2021,12,1)
+    end_date = datetime.date(2021,12,31)
+    HS_df = threshold_search(column_name, threshold, url, start_date, end_date)
+    print(f"Days exceeding 60mph winds: {HS_df}")
