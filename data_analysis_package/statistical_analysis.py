@@ -23,6 +23,7 @@ def simple_timeseries (url, start_date, end_date, column_name):
     start_date: a start date, in the format of datetime.date(yyyy,m,d)
     end_date: an end date, in the format of datetime.date(yyyy,m,d)
     column_name: The exact name of the column to be plotted, eg. "Out_Temp", "Out_Hum"
+    Outputs: a timeseries plot.
     """
     url = url
     dd.data_download(url)
